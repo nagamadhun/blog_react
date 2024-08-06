@@ -1,9 +1,17 @@
 import React from 'react'
 import './home.css'
 import Header from '../../header/Header'
+import Posts from '../../posts/Posts'
+import SideBar from '../../sidebar/SideBar'
 const Home = () => {
   return (
-    <div className='home'><Header /></div>
+    <>
+    <Header />
+    <div className='home'>
+      <Posts />
+      <SideBar />
+    </div>
+    </>
   )
 }
 
